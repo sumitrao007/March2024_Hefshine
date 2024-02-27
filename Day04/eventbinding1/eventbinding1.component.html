@@ -1,0 +1,45 @@
+<p>eventbinding1 works!</p>
+<!-- syntax
+    (eventname)="eventHandler"
+-->
+<!-- <button (click)="onClick()" >Click</button>
+<br><br>
+<img src="../../assets/bg12.jpg" alt="" (click)="onImage()" title="Click on image" ><br><br> -->
+
+<!-- $event 
+    - It is Special Variable given Angular 
+    - It gives current DOM Element information 
+    - U can apply Any Html tag 
+    - u can only access a data 
+-->
+<!-- 
+<button value="doller event occur.." (click) ="onDollerEvent($event)" >Doller event</button>
+<br><br> -->
+
+<!-- template reference variable 
+
+    - U can apply any tag
+    - it holds the object /handle of particular element
+    - u can manipulate data as well as beahviour 
+    - #uniquename
+-->
+
+<!-- <input  #inputname type="text" placeholder="Enter the Name"><br><br>
+<button (click)="onSend(inputname)" >Send</button> <hr>
+<input  #inputname1 type="text" placeholder="Enter the Name"><br><br>
+<button (click)="onSend1(inputname1.value)" >Send</button> -->
+
+<!-- change
+
+-->
+
+<input (change)="onChange()" type="text" placeholder="Enter the Name "><br>
+
+<!-- keyup
+     keydown
+-->
+<br><br>
+<input type="text" (keyup)="onKeyup()" placeholder="Key up Event " >
+
+<br><br>
+<input type="text" (keydown)="onKeyDown()" placeholder="Key down Event " >

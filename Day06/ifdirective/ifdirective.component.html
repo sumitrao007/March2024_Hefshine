@@ -1,0 +1,28 @@
+<p>ifdirective works!</p>
+
+<!-- structural directive 
+    - u can modify ur DOM Structure dynamically
+    1 *ngIf 
+    2 *ngFor
+    3 *ngSwitch 
+
+    *ngIf="condition"
+-->
+    <!-- <div *ngIf="rating<4">
+        <h2>Condition is True</h2>
+    </div> -->
+
+    <!-- <div *ngIf="rating<4;else myelsepart">
+        <h2>Condition is True</h2>
+    </div>
+
+    <ng-template #myelsepart>
+        <h2> Condition is False </h2>
+    </ng-template> -->
+
+
+    <h2 *ngIf="num%2==0;else oddpart"> Number is Even </h2>
+
+<ng-template #oddpart>
+    <h2> Number is Odd  </h2>
+</ng-template>

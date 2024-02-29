@@ -1,0 +1,11 @@
+
+<p>parent2 works!</p>
+<h2> {{childStrData}} </h2>
+<h2>ID:: {{childjsonData.id}}  </h2>
+<h2>First name :: {{childjsonData.fname}} </h2>
+<h2>Status :: {{childjsonData.status}} </h2>
+
+<hr>
+<app-child2 (childStrEvent)="childStrData=$event"
+(childJsonEvent)="childjsonData=$event"
+></app-child2>

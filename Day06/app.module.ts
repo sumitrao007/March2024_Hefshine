@@ -13,6 +13,16 @@ import { TwodatabindingComponent } from './twodatabinding/twodatabinding.compone
 import { IfdirectiveComponent } from './ifdirective/ifdirective.component';
 import { FordirectiveComponent } from './fordirective/fordirective.component';
 import { FormsModule } from '@angular/forms';
+import { SwitchdirectiveComponent } from './switchdirective/switchdirective.component';
+import { Parent1Component } from './parent1/parent1.component';
+import { Child1Component } from './child1/child1.component';
+import { Child2Component } from './child2/child2.component';
+import { Parent2Component } from './parent2/parent2.component';
+import { InbuiltpipeComponent } from './inbuiltpipe/inbuiltpipe.component';
+import { CustompipeComponent } from './custompipe/custompipe.component';
+import { SummaryPipe } from './summary.pipe';
+import { PostComponent } from './post/post.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,12 +35,22 @@ import { FormsModule } from '@angular/forms';
     Eventbinding1Component,
     TwodatabindingComponent,
     IfdirectiveComponent,
-    FordirectiveComponent
+    FordirectiveComponent,
+    SwitchdirectiveComponent,
+    Parent1Component,
+    Child1Component,
+    Child2Component,
+    Parent2Component,
+    InbuiltpipeComponent,
+    CustompipeComponent,
+    SummaryPipe,
+    PostComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
